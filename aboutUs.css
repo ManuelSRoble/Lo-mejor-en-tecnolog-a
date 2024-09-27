@@ -1,0 +1,290 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+/* ------------- Estilo header -------------*/
+/*
+header {
+  background-color: #222;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px;
+  height: 3rem;
+  flex-wrap: wrap;
+}
+header a{
+  text-decoration: none;
+  color: #eee;
+  transition: .2s ease;
+}
+header a:hover{
+  color: #14de43;
+}
+
+.logo {
+  flex: 1;
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* ------------- Estilo body -------------*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(245, 245, 247);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ------------- Estilo menú -------------*/
+.menu-toggle {
+  display: none;
+}
+
+/* ------------- Estilo header -------------*/
+header {
+  background-color: rgb(22,22,22);
+  color: rgb(245, 245, 247);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+/* Estilo del logo */
+.logo {
+  flex: 1;
+  width: 200px;
+  height: auto;
+  margin-left: 0;
+}
+
+/* Estilo de navegación */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+/* Estilos para mostrar el menú cuando se activa */
+nav ul.active {
+  max-height: 300px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* Efecto hover cambia de color cuando pasa por encima de los distintos enlaces */
+nav ul li a:hover {
+  color: #638ea8;
+}
+
+/* Asegúrate de que todos los iconos estén alineados correctamente */
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Asegura que todos los links dentro del menú estén alineados de la misma manera */
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  padding: 8px 10px;
+}
+
+.navbar-nav .nav-link i {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+/* Estilo logo header */
+.logo img {
+  width: 200px;
+  height: auto;
+}
+/* Estilo de navegación */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para mostrar el menú cuando se activa */
+nav ul.active {
+  display: flex; /* Muestra el menú cuando se activa */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* Efecto hover cambia de color cuando pasa por encima de los distintos enlaces */
+nav ul li a:hover {
+  color: #14de43;
+}
+
+/* ------------- Estilo Footer -------------*/
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*contenido ppal*/
+body{
+  background-color: #f2f2f2;
+}
+.heading{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+.heading h1 {
+  font-size: 50px;
+  color: #222;
+  margin-bottom: 25px;
+  position: relative;
+}
+.heading h1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+.heading p{
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 35px;
+}
+.container{
+  width: 90%;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-image{
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.about-image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+.about-image:hover img{
+  transform: scale(1.2);
+}
+.about-content{
+  flex: 1;
+}
+.about-content h2{
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+.about-content .read-more{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #eee;
+  background: #4caf50;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+  background: #3e8e41;
+}
+
+@media screen and (max-width: 768px){
+  .heading{
+    padding: 0px 20px;
+  }
+  .heading h1{
+    font-size: 36px;
+  }
+  .heading p{
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .container{
+    padding: 0px;
+  }
+  .about{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about-image{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .about-content p {
+    padding: 0;
+    font-size: 15px;
+  }
+  .about-content .read-more{
+    font-size: 16px;
+  }
+}
